@@ -11,11 +11,11 @@ nav_order: 7
 sudo apt install git make gcc curl gnupg ca-certificates jq bash
 ```
 ```
-wget https://dl.google.com/go/go1.24.9.linux-amd64.tar.gz && \
-echo "5b7899591c2dd6e9da1809fde4a2fad842c45d3f6b9deb235ba82216e31e34a6  go1.24.9.linux-amd64.tar.gz" | sha256sum --check
+wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz && \
+echo "9fa5ffeda4170de60f67f3aa0f824e426421ba724c21e133c1e35d6159ca1bec  go1.25.4.linux-amd64.tar.gz" | sha256sum --check
 ```
 ```
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.9.linux-amd64.tar.gz && \
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz && \
 export PATH=$PATH:/usr/local/go/bin && \
 ```
 ```
