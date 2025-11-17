@@ -29,7 +29,8 @@ concurrency:
 jobs:
   # Build job
   build:
-    env: PAGES_REPO_NWO: ${{ github.repository }}
+    env: 
+      PAGES_REPO_NWO: ${{ github.repository }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
