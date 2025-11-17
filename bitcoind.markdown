@@ -90,5 +90,5 @@ MemoryDenyWriteExecute=true
 SystemCallArchitectures=native
 
 [Install]
-WantedBy=multi-user.target" | sudo tee /etc/systemd/system/${prefix}bitcoind.service
+WantedBy=multi-user.target" | sudo tee /etc/systemd/system/bitcoind.service
 ```
