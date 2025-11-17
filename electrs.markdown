@@ -17,6 +17,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 ```
 ```
+cargo --version
+```
+
+{: .info }
+cargo 1.91.1 (ea2d97820 2025-10-10)
+
+```
 curl https://romanzey.de/pgp.txt | gpg --import
 ```
 ```

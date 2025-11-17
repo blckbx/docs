@@ -59,6 +59,13 @@ strip build/bin/*
 sudo install -m 0755 -o root -g root -t /usr/local/bin/ build/bin/*
 ```
 ```
+bitcoind --version
+```
+
+{: .info }
+Bitcoin Core daemon version v30.0
+
+```
 echo "
 [Unit]
 Description=Bitcoin daemon

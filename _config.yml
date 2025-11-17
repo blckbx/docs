@@ -46,3 +46,16 @@ search_enabled: true
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
+
+callouts:
+  output:
+    color: blue
+  warning:
+    color: red
+  info:
+    color: green
+  bitcoin:
+    color: yellow 
+  note:
+    color: purple
+callouts_opacity: 0.3

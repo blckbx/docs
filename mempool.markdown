@@ -27,15 +27,16 @@ git verify-tag v3.2.1
 ```
 sudo mysql
 ```
-```
-create database mempool;
-```
-```
-grant all privileges on mempool.* to 'mempool'@'localhost' identified by 'mempool';
-```
-```
-exit
-```
+>```
+> create database mempool;
+>```
+>```
+> grant all privileges on mempool.* to 'mempool'@'localhost' identified by 'mempool';
+>```
+>```
+> exit
+>```
+
 ```
 cd backend && \
 npm install --prod && \
