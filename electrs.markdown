@@ -31,14 +31,14 @@ git clone https://github.com/romanz/electrs.git && \
 cd electrs
 ```
 ```
-git checkout v0.10.10 && \
-git verify-tag v0.10.10
+git checkout v0.11.0 && \
+git verify-tag v0.11.0
 ```
 ```
 cargo build --locked --release
 ```
 ```
-sudo install -m 0755 -o root -g root -t /usr/local/bin/ ./target/release/electrs
+sudo install -m 0755 -o root -g root -t /usr/local/bin/ /home/electrs/electrs/target/release/electrs
 ```
 ```
 echo "
