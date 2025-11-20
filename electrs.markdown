@@ -8,7 +8,7 @@ nav_order: 4
 <br />
 
 ```
-sudo apt install clang-14 cmake
+sudo apt install clang cmake
 ```
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -33,11 +33,6 @@ cd electrs
 ```
 git checkout v0.11.0 && \
 git verify-tag v0.11.0
-```
-```
-export CC=clang-14 && \
-export CXX=clang++-14 && \
-export LIBCLANG_PATH=/usr/lib/llvm-14/lib
 ```
 ```
 cargo build --locked --release
