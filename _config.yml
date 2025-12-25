@@ -39,7 +39,7 @@ theme: just-the-docs
 color_scheme: custom.scss
 
 #favicon_ico: "/assets/images/favicon.ico"
-logo: "https://avatars.githubusercontent.com/u/74455114"
+logo: "https://raw.githubusercontent.com/blckbx/docs/refs/heads/main/assets/images/Bitcoin.png"
 
 search_enabled: true
 
