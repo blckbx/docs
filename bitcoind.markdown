@@ -31,8 +31,8 @@ git clone https://github.com/bitcoin/bitcoin.git && \
 cd bitcoin
 ```
 ```
-git checkout v30.1 && \
-git verify-tag v30.1
+git checkout v30.2 && \
+git verify-tag v30.2
 ```
 ```
 rm -rf build/ && \
@@ -64,7 +64,7 @@ bitcoind --version
 ```
 
 {: .info }
-Bitcoin Core daemon version v30.1
+Bitcoin Core daemon version v30.2
 
 ```
 echo "
