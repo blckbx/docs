@@ -70,21 +70,32 @@ Bitcoin Core daemon version v30.2
 echo "
 [Unit]
 Description=Bitcoin daemon
+Wants=network-online.target
+After=network-online.target
 
 [Service]
-ExecStart=/usr/local/bin/bitcoind -daemon \\
-                                  -pid=/run/bitcoind/bitcoind.pid \\
-                                  -conf=/data/bitcoin/bitcoin.conf \\
-                                  -datadir=/data/bitcoin/.bitcoin
-ExecStop=/usr/local/bin/bitcoin-cli stop
+ExecStart=/usr/local/bin/bitcoind \\
+                         -conf=/data/bitcoin/bitcoin.conf \\
+                         -datadir=/data/bitcoin/.bitcoin
 
-Type=forking
+ExecStop=/usr/local/bin/bitcoin-cli \\stop
+                         -conf=/data/bitcoin/bitcoin.conf \\
+                         -datadir=/data/bitcoin/.bitcoin \\
+                         -rpcwait stop
+Type=simple
+RemainAfterExit=yes
+
 Restart=on-failure
-TimeoutStartSec=infinity
+SuccessExitStatus=0
+
+RestartSec=30
 TimeoutStopSec=600
 
 User=bitcoin
-Group=bitcoin
+UMask=0027
+PIDFile=/run/bitcoind/bitcoind.pid
+RuntimeDirectory=bitcoind
+RuntimeDirectoryMode=0710
 
 StandardOutput=null
 StandardError=journal
