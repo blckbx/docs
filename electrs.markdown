@@ -24,16 +24,29 @@ cargo --version
 cargo 1.91.1 (ea2d97820 2025-10-10)
 
 ```
-curl https://romanzey.de/pgp.txt | gpg --import
+mkdir -p ~/.config/git && \
+touch ~/.config/git/allowed_signers
+```
+```
+echo "git@romanzey.de ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAZVq/3fgkildjN/MqEnhrP5550sDpFzGxMwevr5q/9w" > ~/.config/git/allowed_signers
+(see https://github.com/romanz/keys)
+```
+```
+git config gpg.ssh.allowedSignersFile "$HOME/.config/git/allowed_signers"
 ```
 ```
 git clone https://github.com/romanz/electrs.git && \
 cd electrs
 ```
 ```
-git checkout v0.11.0 && \
-git verify-tag v0.11.0
+git checkout v0.11.1 && \
+git log --show-signature
 ```
+
+{: .info }
+commit 35216c6d30148be8e6763d913d437330f431fc03 (HEAD, tag: v0.11.1)
+Good "git" signature for git@romanzey.de with ED25519 key SHA256:GifMn7F2swVKyn6MewbQHrYCs4i/bPK7gnwxhuPz/YA)
+
 ```
 cargo build --locked --release
 ```
