@@ -40,13 +40,11 @@ cd electrs
 ```
 ```
 git checkout v0.11.1 && \
-git log --show-signature
+git verify-tag v0.11.1
 ```
 
 {: .info }
-commit 35216c6d30148be8e6763d913d437330f431fc03 (HEAD, tag: v0.11.1)
-Good "git" signature for git@romanzey.de with ED25519 key SHA256:GifMn7F2swVKyn6MewbQHrYCs4i/bPK7gnwxhuPz/YA)
-
+Good "git" signature for git@romanzey.de with ED25519 key SHA256:GifMn7F2swVKyn6MewbQHrYCs4i/bPK7gnwxhuPz/YA
 ```
 cargo build --locked --release
 ```
