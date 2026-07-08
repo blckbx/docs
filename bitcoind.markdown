@@ -31,8 +31,8 @@ git clone https://github.com/bitcoin/bitcoin.git && \
 cd bitcoin
 ```
 ```
-git checkout v31.0 && \
-git verify-tag v31.0
+git checkout v31.1 && \
+git verify-tag v31.1
 ```
 ```
 rm -rf build/ && \
