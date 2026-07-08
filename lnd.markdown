@@ -11,12 +11,12 @@ nav_order: 7
 sudo apt install git make gcc curl gnupg ca-certificates jq bash
 ```
 ```
-wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz && \
-echo "9fa5ffeda4170de60f67f3aa0f824e426421ba724c21e133c1e35d6159ca1bec  go1.25.4.linux-amd64.tar.gz" | sha256sum --check
+wget https://dl.google.com/go/go1.25.11.linux-amd64.tar.gz
+echo "34f14304e856893f4ba30c2cacfe93906e9de7915c5f6aaaf3a81cdccd7ba30b  go1.25.11.linux-amd64.tar.gz" | sha256sum --check
 ```
 ```
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz && \
-export PATH=$PATH:/usr/local/go/bin && \
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.25.11.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
 ```
 ```
 curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import
@@ -26,8 +26,8 @@ git clone https://https://github.com/lightningnetwork/lnd.git && \
 cd lnd
 ```
 ```
-git checkout v0.20.1-beta && \
-git verify-tag v0.20.1-beta
+git checkout v0.21.1-beta && \
+git verify-tag v0.21.1-beta
 ```
 ```
 make clean && make release-install
