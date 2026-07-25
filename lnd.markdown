@@ -19,7 +19,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.25.11.linux-amd64.t
 export PATH=$PATH:/usr/local/go/bin
 ```
 ```
-curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc | gpg --import
+curl https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/ziggie1984.asc | gpg --import
 ```
 ```
 git clone https://https://github.com/lightningnetwork/lnd.git && \
