@@ -26,8 +26,8 @@ git clone https://https://github.com/lightningnetwork/lnd.git && \
 cd lnd
 ```
 ```
-git checkout v0.21.1-beta && \
-git verify-tag v0.21.1-beta
+git checkout v0.21.2-beta && \
+git verify-tag v0.21.2-beta
 ```
 ```
 make clean && make release-install
