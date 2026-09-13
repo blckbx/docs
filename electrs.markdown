@@ -45,8 +45,11 @@ git verify-tag v0.11.1
 
 {: .info }
 Good "git" signature for git@romanzey.de with ED25519 key SHA256:GifMn7F2swVKyn6MewbQHrYCs4i/bPK7gnwxhuPz/YA
+
+{: .info }
+Due to issue https://github.com/romanz/electrs/issues/1276, use this fix to build electrs:
 ```
-cargo build --locked --release
+CXXFLAGS="-include cstdint" cargo build --locked --release
 ```
 ```
 sudo install -m 0755 -o root -g root -t /usr/local/bin/ /home/electrs/electrs/target/release/electrs
