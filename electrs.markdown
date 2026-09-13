@@ -39,8 +39,8 @@ git clone https://github.com/romanz/electrs.git && \
 cd electrs
 ```
 ```
-git checkout v0.11.1 && \
-git verify-tag v0.11.1
+git checkout v0.12.0 && \
+git verify-tag v0.12.0
 ```
 
 {: .info }
