@@ -32,8 +32,8 @@ cd bitcoin
 ```
 ```
 git fetch && \
-git checkout v31.1 && \
-git verify-tag v31.1
+git checkout v32.0 && \
+git verify-tag v32.0
 ```
 ```
 rm -rf build/ && \
@@ -65,7 +65,7 @@ bitcoind --version
 ```
 
 {: .info }
-Bitcoin Core daemon version v31.0 bitcoind
+Bitcoin Core daemon version v32.0 bitcoind
 
 ```
 echo "
